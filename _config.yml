@@ -39,45 +39,45 @@ external-links:    # input only your own url slug. The icons with missing entrie
 # Skills Section - Add the list of your Skills by categories/tools. The indentation for each level needs to be precise. 
 skills:
   - category: Development
-    items:
-      - C/C++
-      - Python
-      - Bash
-      - MATLAB
+  items:
+    - C/C++
+    - Python
+    - Bash
+    - MATLAB
   - category: API
-    items:
-      - Git
-      - NI VeriStand
-      - Simulink
-      - Code Composer studio
-      - STM32IDE
-      - VisualStudio Code
-      - Visual Studio
-      - Github
-      - Arduino / Raspberry Pi
-      - Breadboarding for circuit testing
+  items:
+    - Git
+    - NI VeriStand
+    - Simulink
+    - Code Composer studio
+    - STM32IDE
+    - VisualStudio Code
+    - Visual Studio
+    - Github
+    - Arduino / Raspberry Pi
+    - Breadboarding for circuit testing
   - category: Embedded systems
-    items:
-      - TM4C
-      - STM32
-      - ESP32
-      - Raspberry Pi
-      - BSP conception
-      - Low-level drivers (CAN, UART, I2C...)
-      - RTOS (CMSIS, FreeRTOS)
+  items:
+    - TM4C
+    - STM32
+    - ESP32
+    - Raspberry Pi
+    - BSP conception
+    - Low-level drivers (CAN, UART, I2C...)
+    - RTOS (CMSIS, FreeRTOS)
   - category: Electronics/Hardware
-    items:
-      - PCB Design (Altium Designer, KiCad)
-      - Breadboarding for circuit testing
-      - Logic analyser / Oscilloscope
-      - Analogic Electronics
-      - Circuit design
+  items:
+    - PCB Design (Altium Designer, KiCad)
+    - Breadboarding for circuit testing
+    - Logic analyser / Oscilloscope
+    - Analogic Electronics
+    - Circuit design
   - category: Avionics
-    items:
-      - DO-178C
-      - ARINC 429
-      - RS-485
-      - AFHA
+  items:
+    - DO-178C
+    - ARINC 429
+    - RS-485
+    - AFHA
 
 # Contact Form Setup. Setup an account and copy over the key. When someone fills out the form, it will be received in your email.
 formspree-key:   https://formspree.io/f/
