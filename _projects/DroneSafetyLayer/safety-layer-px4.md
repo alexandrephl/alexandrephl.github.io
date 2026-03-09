@@ -1,19 +1,19 @@
 ---
 layout: post
 title: PX4 Obstacle Avoidance Safety Layer
-description:  Build a safety “gatekeeper” between a Raspberry Pi planner (vision/planning) and PX4 Offboard control:
-- Pi computes avoidance commands  
-- STM32 validates them in real-time  
-- PX4 executes only safe commands  
-- Failsafe behavior if anything becomes invalid.
+description:  >-
+  Build a safety “gatekeeper” between a Raspberry Pi planner (vision/planning) and PX4 Offboard control:
+  - Pi computes avoidance commands
+  - STM32 validates them in real-time
+  - PX4 executes only safe commands
+  - Failsafe behavior if anything becomes invalid.
   
-Technical stack: 
-- C (bare-metal + RTOS)
-- FreeRTOS / CMSIS-RTOS
-- STM32 HAL (isolated in BSP)
-- MAVLink (UART DMA RX)
-- DroneCAN / libcanard
-
+  Technical stack:
+  - C (bare-metal + RTOS)
+  - FreeRTOS / CMSIS-RTOS
+  - STM32 HAL (isolated in BSP)
+  - MAVLink (UART DMA RX)
+  - DroneCAN / libcanard
 main-image: /safety-layer.jpg
 ---
 
@@ -27,14 +27,9 @@ Use this to have subsection if needed
 
 
 ## Embedding images 
-### External images
-{% include image-gallery.html images="https://live.staticflickr.com/65535/52821641477_d397e56bc4_k.jpg, https://live.staticflickr.com/65535/52822650673_f074b20d90_k.jpg" height="400"%}
-<span style="font-size: 10px">"Starship Test Flight Mission" from https://www.flickr.com/photos/spacex/52821641477/</span>  
-You can put in multiple entries. All images will be at a fixed height in the same row. With smaller window, they will switch to columns.  
 
 ### Embeed images
-{% include image-gallery.html images="project2.jpg" height="400" %} 
-place the images in project folder/images then update the file path.   
+{% include image-gallery.html images="safety-layer.jpg" height="400" %} 
 
 
 ## Embedding youtube video
