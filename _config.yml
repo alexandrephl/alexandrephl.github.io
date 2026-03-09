@@ -44,9 +44,6 @@ skills:
       - Python
       - Bash
       - MATLAB
-      - 
-      - 
-      - 
   - category: API
     items:
       - Git
@@ -57,7 +54,6 @@ skills:
       - VisualStudio Code
       - Visual Studio
       - Github
-      - 
       - Arduino / Raspberry Pi
       - Breadboarding for circuit testing
   - category: Embedded systems
