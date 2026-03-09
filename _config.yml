@@ -15,9 +15,10 @@ title: Alexandre Panhaleux's Portfolio # This is what shows up in the tab of the
 name: Alexandre Panhaleux
 headline: Embedded Systems & Firmware Engineer
 description: >- # dont remove this line. this will ignore all new lines until the next section
-  Write an awesome intro and discuss your highlights and qualification. You can edit this
-  line in _config.yml. It will appear in your document head meta (for
-  Google search results) and in your feed.xml site description.
+  I am an electrical engineer focused on embedded systems, from hardware and electronics design 
+  to firmware development and validation. I enjoy designing robust system architectures, bringing
+  hardware to life with clean embedded software, and verifying performance with a practical, test-
+  driven approach. This portfolio showcases selected projects and the engineering decisions behind them.
 
 # Place your profile image in /assets/images/profile-image/folder and edit the file name
 profile_image: ./assets/images/profile-image/avatar.jpeg
