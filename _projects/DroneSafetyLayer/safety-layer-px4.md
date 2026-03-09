@@ -3,17 +3,17 @@ layout: post
 title: PX4 Obstacle Avoidance Safety Layer
 description:  >-
   Build a safety “gatekeeper” between a Raspberry Pi planner (vision/planning) and PX4 Offboard control:
-  - Pi computes avoidance commands
-  - STM32 validates them in real-time
-  - PX4 executes only safe commands
-  - Failsafe behavior if anything becomes invalid.
+  - Pi computes avoidance commands  
+  - STM32 validates them in real-time  
+  - PX4 executes only safe commands  
+  - Failsafe behavior if anything becomes invalid.  
   
-  Technical stack:
-  - C (bare-metal + RTOS)
-  - FreeRTOS / CMSIS-RTOS
-  - STM32 HAL (isolated in BSP)
-  - MAVLink (UART DMA RX)
-  - DroneCAN / libcanard
+  stack:
+  - C (bare-metal + RTOS)  
+  - FreeRTOS / CMSIS-RTOS  
+  - STM32 HAL (isolated in BSP)  
+  - MAVLink (UART DMA RX)  
+  - DroneCAN / libcanard  
 main-image: /safety-layer.jpg
 ---
 
