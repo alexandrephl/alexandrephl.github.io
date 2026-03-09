@@ -14,10 +14,11 @@ main-image: /safety-layer.jpg
 ---
 
 ---
-# Header 1 
-Used for the title (already generated automatically at the top)
-## Header 2  
-Use this for the header of each section
+
+## High-level pipeline  
+**Raspberry Pi (planner/vision)** → **DroneCAN (Classic CAN 2.0)** → **STM32 safety validation (FreeRTOS)** → **MAVLink UART** → **PX4 Offboard**
+
+
 ### Header 3 
 Use this to have subsection if needed
 
