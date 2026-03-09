@@ -39,6 +39,7 @@ external-links:    # input only your own url slug. The icons with missing entrie
 # Skills Section - Add the list of your Skills by categories/tools. The indentation for each level needs to be precise. 
 skills:
   - category: Development
+    items:
     - C/C++
     - Python
     - Bash
@@ -47,6 +48,7 @@ skills:
     - 
     - 
   - category: API
+    items:
     - Git
     - NI VeriStand
     - Simulink
@@ -59,6 +61,7 @@ skills:
     - Arduino / Raspberry Pi
     - Breadboarding for circuit testing
   - category: Embedded systems
+    items:
     - TM4C
     - STM32
     - ESP32
@@ -67,12 +70,14 @@ skills:
     - Low-level drivers (CAN, UART, I2C...)
     - RTOS (CMSIS, FreeRTOS)
   - category: Electronics/Hardware
+    items:
     - PCB Design (Altium Designer, KiCad)
     - Breadboarding for circuit testing
     - Logic analyser / Oscilloscope
     - Analogic Electronics
     - Circuit design
   - category: Avionics
+    items:
     - DO-178C
     - ARINC 429
     - RS-485
