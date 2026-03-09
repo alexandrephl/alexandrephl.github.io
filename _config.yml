@@ -84,7 +84,6 @@ formspree-key:   https://formspree.io/f/{8-digit key}
 
 # Active theme (Updatethis to switch themes). Make sure to keep the indentation the samne.
 colors: 
-  mint theme:
   text: "#2c3333"
   border: "#e0f2ef"
   link: "#40b3a2"
