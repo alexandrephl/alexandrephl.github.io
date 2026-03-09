@@ -29,7 +29,7 @@ Use this to have subsection if needed
 ## Embedding images 
 
 ### Embeed images
-{% include image-gallery.html images="safety-layer.jpg" height="400" %} 
+{% include image-gallery.html images="/safety-layer.jpg" height="400" %} 
 
 
 ## Embedding youtube video
