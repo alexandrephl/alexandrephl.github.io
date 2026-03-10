@@ -20,3 +20,7 @@ main-image: /safety-layer.jpg
 ## Why It Matters
 DroneCAN is widely used for **robust sensor/actuator networks** in UAV systems because it provides a structured message model on top of CAN.  
 This project demonstrates an end-to-end embedded implementation of a **real sensor node**: hardware acquisition → engineering units → deterministic periodic publishing → external validation on a real CAN bus.
+
+---
+
+## System Architecture
