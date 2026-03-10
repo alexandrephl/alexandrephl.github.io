@@ -144,7 +144,14 @@ nav .mobile-nav {
     display: none;
 }
 
-
+.repo-icon{
+  margin-left: 0.75rem;
+  display: inline-flex;
+  align-items: center;
+  gap: 0.35rem; /* if you add text later */
+  font-size: 0.95em;
+  text-decoration: none;
+}
 
 /* SECTION 1: Hero */
 .hero-section {
@@ -331,12 +338,6 @@ nav .mobile-nav {
 
 .project-card .project-title:hover {
     text-decoration: underline;
-}
-
-.project-card.repo-icon{
-    margin-left: 0.75rem;
-    font-size: 0.95em;
-    text-decoration: none;
 }
 
 
