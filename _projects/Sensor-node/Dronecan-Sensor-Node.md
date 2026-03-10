@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Dronecan Sensor Node - BMP280
-
+repo: "https://github.com/alexandrephl/stm32-dronecan-node"
 description:  >-
   A DroneCAN (UAVCAN v0) sensor node running on STM32F446.  It publishes a clean air-data subset on the CAN bus (heartbeat + pressure + temperature) using a BSP layer, a dedicated sensor driver, and libcanard for transport.
 
@@ -17,11 +17,6 @@ skills:
 main-image: /safety-layer.jpg
 ---
 ---
-<div style="float:right; margin: 0 0 1rem 1rem; font-size: 28px;">
-  <a href="https://github.com/alexandrephl/stm32-dronecan-node" target="_blank" rel="noopener">
-    <i class="fa-brands fa-github"></i>
-  </a>
-</div>
 
 ## Why It Matters
 DroneCAN is widely used for **robust sensor/actuator networks** in UAV systems because it provides a structured message model on top of CAN.  
