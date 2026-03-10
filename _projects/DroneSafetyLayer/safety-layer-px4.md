@@ -47,7 +47,8 @@ It demonstrates a practical way to enable advanced perception without compromisi
 
 ## Safety Gate Design  
 
-### Command Validity Rules
+### Command Validity Rules  
+
 A planner command is considered valid only if:
 - **Freshness:** received within a strict timeout (watchdog)
 - **Bounds:** velocity and yaw-rate stay within configured limits
