@@ -58,7 +58,9 @@ The second video has the autoplay on. copy and paste the 11-digit id found in th
 {% include youtube-video.html id="MhVw-MHGv4s" autoplay= "false"%}
 {% include youtube-video.html id="XGC31lmdS6s" autoplay = "true" %}
 
-{% include hero.html%}
 
-external-links:    # input only your own url slug. The icons with missing entries will not appear.
-  github: alexandrephl    # https://github.com/{your url slug} 
+<div style="float:right; margin: 0 0 1rem 1rem; font-size: 28px;">
+  <a href=repo target="_blank" rel="noopener">
+    <i class="fa-brands fa-github"></i>
+  </a>
+</div>
