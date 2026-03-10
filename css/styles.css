@@ -580,22 +580,19 @@ footer p {
 }
 
 .post-view .title-header  {
+    width: 100%;
     display: flex;
-    align-items: baseline;
-    gap: 0.75rem;
-    margin-bottom: 10px;
 }
 
 .post-view .title-header  h1 {
-    margin: 0;
-    line-height: 1.2;
+    line-height: normal;
+    margin-bottom: 10px;
 }
 
 /* link style */
 .post-view .title-header .repo-icon{
-  display: inline-flex;
-  align-items: baseline;
-  gap: 0.35rem;
+  display: flex;
+  width: 100%;
   padding: 0.25rem 0.6rem;
   margin-bottom: 10px;
 
