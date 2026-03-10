@@ -15,21 +15,34 @@ main-image: /safety-layer.jpg
 
 ---
 
-## High-level pipeline  
-**Raspberry Pi (planner/vision)** → **DroneCAN (Classic CAN 2.0)** → **STM32 safety validation (FreeRTOS)** → **MAVLink UART** → **PX4 Offboard**
-
-  Offboard obstacle-avoidance architecture for a PX4-controlled drone: a Raspberry Pi (vision + planning) proposes velocity setpoints, an STM32 safety gate verifies them in real time (freshness, bounds, confidence/TTL), and PX4 executes only commands that pass, otherwise it falls back to a deterministic failsafe command path. 
-
 ## Why it matters 
 Modern small UAVs increasingly rely on computer vision and autonomy, but those AI workloads are not deterministic (variable runtime, OS/GPU scheduling, resource contention). Meanwhile, flight control requires hard real-time deadlines.
 This project tackles that integration problem by implementing a mixed-criticality architecture: a Raspberry Pi proposes avoidance maneuvers, an STM32 safety supervisor validates them deterministically (freshness, bounds, TTL/confidence, state constraints), and PX4 executes only safe commands—otherwise it falls back to a predictable failsafe path.
-It demonstrates a practical way to enable advanced perception without compromising control-loop safety, including latency/jitter measurement on the communication chain.
+It demonstrates a practical way to enable advanced perception without compromising control-loop safety, including latency/jitter measurement on the communication chain.  
 
+---
 
+## System Architecture  
 
+### Components & Responsibilities
+- **PX4 (Autopilot):**
+  - Maintains stabilization and core flight control loops.
+  - Accepts **Offboard velocity setpoints** over MAVLink and track setpoints.
+  - Sends Heartbits & flying state data (vel...) over mavlink.
+- **Raspberry Pi (Autonomy):**
+  - Runs perception algorithm and identify obstacles with distances/speed.
+  - Runs flight planning algorithm: Establish next target point, using best avoidance tragectory if needed.
+  - Produces velocity setpoints *(vx, vy, vz, yaw_rate)* plus metadata *(timestamp, TTL, confidence)*, and sends them over CANBus.
+- **STM32F446 (Safety Gatekeeper):**
+  - Reads planning commands over CAN.
+  - Reads UAV Heartbits & flying state data (vel...) over mavlink.
+  - Validates every planning command under deterministic constraints: (freshness, bounds, TTL/confidence, state constraints, hardware constraints).
+  - Emits safe commands only, otherwise forces a predictable failsafe behavior.
 
-## Embedding images 
-
+### Interfaces
+- **Pi ↔ STM32:** DroneCAN (UAVCAN v0) via libcanard (Classic CAN 2.0)
+- **STM32 ↔ PX4:** MAVLink over UART (DMA RX for robust reception)
+  
 ### Embeed images
 {% include image-gallery.html images="/safety-layer.jpg" height="400" %} 
 
