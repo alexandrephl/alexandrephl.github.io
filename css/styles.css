@@ -144,35 +144,6 @@ nav .mobile-nav {
     display: none;
 }
 
-.repo-icon{
-  display: inline-flex;
-  align-items: baseline;
-  gap: 0.35rem;
-  padding: 0.15rem 0.35rem;     /* zone cliquable */
-  border-radius: 8px;
-  cursor: pointer;
-}
-
-.repo-icon * {
-  color: inherit;
-}
-
-.repo-icon > * {
-  pointer-events: none;
-}
-
-.repo-icon:hover{
-  color: var(--highlight-color);
-  background: var(--light-background-color);
-  text-decoration-thickness: 2px;
-}
-
-.repo-ico{
-  font-size: 1.15em;
-  position: relative;
-  top: -1px;                     /* petit tweak d’alignement icône */
-}
-
 /* SECTION 1: Hero */
 .hero-section {
     padding: 0 50px;
@@ -618,6 +589,38 @@ footer p {
 .post-view .title-header  h1 {
     margin: 0;
     line-height: 1.2;
+}
+
+/* link style */
+.post-view .title-header .repo-icon{
+  display: inline-flex;
+  align-items: baseline;
+  gap: 0.35rem;
+  padding: 0.15rem 0.35rem;
+  border-radius: 8px;
+
+  color: var(--link-color);
+  text-decoration: underline;
+  text-underline-offset: 3px;
+  text-decoration-thickness: 1px;
+}
+
+/* IMPORTANT: override your global `span { color: ... }` */
+.post-view .title-header .repo-icon span,
+.post-view .title-header .repo-icon i{
+  color: inherit;
+}
+
+/* hover */
+.post-view .title-header .repo-icon:hover{
+  color: var(--highlight-color);
+  background: var(--light-background-color);
+  text-decoration-thickness: 2px;
+}
+
+/* Make the whole thing clickable reliably */
+.post-view .title-header .repo-icon > *{
+  pointer-events: none;
 }
 
 .post-view .summary img {
