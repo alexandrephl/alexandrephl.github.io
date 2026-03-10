@@ -2,7 +2,7 @@
 layout: post
 title: PX4 Obstacle Avoidance Safety Layer
 description:  >-
-  Offboard obstacle-avoidance architecture for a PX4-controlled drone: a Raspberry Pi (vision + planning) proposes velocity setpoints, an STM32 safety gate verifies them in real time (freshness, bounds, confidence/TTL), and PX4 executes only commands that pass—otherwise it falls back to a deterministic failsafe command path. 
+Drone obstacle avoidance without trusting vision blindly: deterministic safety supervision between computer-vision planner and PX4 autopilot
   
 skills:
   - C (bare-metal + RTOS)  
@@ -18,6 +18,7 @@ main-image: /safety-layer.jpg
 ## High-level pipeline  
 **Raspberry Pi (planner/vision)** → **DroneCAN (Classic CAN 2.0)** → **STM32 safety validation (FreeRTOS)** → **MAVLink UART** → **PX4 Offboard**
 
+  Offboard obstacle-avoidance architecture for a PX4-controlled drone: a Raspberry Pi (vision + planning) proposes velocity setpoints, an STM32 safety gate verifies them in real time (freshness, bounds, confidence/TTL), and PX4 executes only commands that pass—otherwise it falls back to a deterministic failsafe command path. 
 
 ### Header 3 
 Use this to have subsection if needed
