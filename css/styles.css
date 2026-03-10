@@ -988,7 +988,27 @@ footer p {
         padding: 5px;
       }
 
+/* DEBUG: make sure we are targeting the right elements */
+.post-view .summary .title-header {
+  outline: 3px solid red !important;
+  background: rgba(255,0,0,0.05) !important;
+}
 
+.post-view .summary .title-header h1 {
+  outline: 3px solid blue !important;
+  margin: 0 !important;
+  line-height: 1.1 !important;
+}
+
+.post-view .summary .title-header .repo-icon {
+  outline: 3px solid green !important;
+  margin-left: 20px !important;
+  position: relative !important;
+  top: 0px !important;
+  padding: 6px 10px !important;
+  display: inline-flex !important;
+  align-items: center !important;
+}
       
 }
 
