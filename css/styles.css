@@ -149,9 +149,17 @@ nav .mobile-nav {
   display: inline-flex;
   align-items: center;
   gap: 0.4rem; 
+  color: var(--link-color);  
+  text-decoration: underline;
   font-size: 1.3em;
-  text-decoration: none;
-  line-height: normal;
+  text-underline-offset: 3px;
+  text-decoration-thickness: 1px;
+  line-height: 1;
+}
+
+.repo-icon:hover{
+  color: var(--highlight-color);
+  text-decoration-thickness: 2px;      /* feels interactive */
 }
 
 .repo-label{
