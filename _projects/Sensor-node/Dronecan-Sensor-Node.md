@@ -17,6 +17,11 @@ skills:
 main-image: /safety-layer.jpg
 ---
 ---
+<div style="float:right; margin: 0 0 1rem 1rem; font-size: 28px;">
+  <a href="https://github.com/alexandrephl/stm32-dronecan-node" target="_blank" rel="noopener">
+    <i class="fa-brands fa-github"></i>
+  </a>
+</div>
 
 ## Why It Matters
 DroneCAN is widely used for **robust sensor/actuator networks** in UAV systems because it provides a structured message model on top of CAN.  
