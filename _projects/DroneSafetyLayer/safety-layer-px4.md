@@ -2,7 +2,7 @@
 layout: post
 title: PX4 Obstacle Avoidance Safety Layer
 description:  >-
-  Drone obstacle avoidance without trusting vision blindly: a deterministic safety supervision between computer-vision planner and PX4 autopilot
+  Drone obstacle avoidance without trusting vision blindly: a deterministic safety supervision between computer-vision planner and PX4 autopilot.
   
 skills:
   - C (bare-metal + RTOS)  
