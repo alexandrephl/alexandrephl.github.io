@@ -145,12 +145,17 @@ nav .mobile-nav {
 }
 
 .repo-icon{
-  margin-left: 0.75rem;
+  margin-left: 1rem;
   display: inline-flex;
   align-items: center;
-  gap: 0.35rem; /* if you add text later */
+  gap: 0.4rem; 
   font-size: 1.3em;
   text-decoration: none;
+}
+
+.repo-label{
+  font-size: 0.85em;
+  opacity: 0.85;
 }
 
 /* SECTION 1: Hero */
