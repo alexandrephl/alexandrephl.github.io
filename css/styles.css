@@ -582,18 +582,21 @@ footer p {
 .post-view .title-header  {
     width: 100%;
     display: flex;
+    align-items: baseline;   /* best for text alignment */
+    gap: 0.75rem;
+    margin-bottom: 10px;     /* spacing under the whole header row */
 }
 
 .post-view .title-header  h1 {
-    line-height: normal;
-    margin-bottom: 10px;
+    margin: 0;               /* IMPORTANT: remove margin-bottom */
+    line-height: 1.2;
 }
 
 /* link style */
 .post-view .title-header .repo-icon{
-  display: flex;
-  width: 100%;
-  top: 6px;
+  display: inline-flex;
+  align-items: baseline;
+  gap: 0.35rem;
   padding: 0.25rem 0.6rem;
   margin-bottom: 10px;
 
@@ -623,6 +626,12 @@ footer p {
 .post-view .title-header .repo-icon:active{
   transform: translateY(0px);
   box-shadow: 0 2px 8px rgba(0,0,0,0.18);
+}
+
+/* Optional tiny icon alignment tweak */
+.post-view .title-header .repo-ico{
+  position: relative;
+  top: -1px; /* try -1px or -2px */
 }
 
 /* Make the whole thing clickable reliably */
