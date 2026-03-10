@@ -1,6 +1,7 @@
 ---
 layout: post
 title: PX4 Obstacle Avoidance Safety Layer
+repo: "https://github.com/alexandrephl/PX4Avoidance-SafetyLayer"
 description:  >-
   Drone obstacle avoidance without trusting vision blindly: a deterministic safety supervision between computer-vision planner and PX4 autopilot.
   
