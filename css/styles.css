@@ -333,6 +333,12 @@ nav .mobile-nav {
     text-decoration: underline;
 }
 
+.project-card.repo-icon{
+    margin-left: 0.75rem;
+    font-size: 0.95em;
+    text-decoration: none;
+}
+
 
 .project-card .project-skills {
     display: flex;
@@ -944,11 +950,6 @@ footer p {
         padding: 5px;
       }
 
-    .repo-icon{
-      margin-left: 0.75rem;
-      font-size: 0.95em;
-      text-decoration: none;
-    }
 
       
 }
