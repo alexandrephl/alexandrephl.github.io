@@ -1,6 +1,7 @@
 ---
 layout: post
 title: Dronecan Sensor Node - BMP280
+repo: https://github.com/alexandrephl/PX4Avoidance-SafetyLayer
 description:  >-
   A DroneCAN (UAVCAN v0) sensor node running on STM32F446.  It publishes a clean air-data subset on the CAN bus (heartbeat + pressure + temperature) using a BSP layer, a dedicated sensor driver, and libcanard for transport.
 
