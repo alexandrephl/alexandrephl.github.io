@@ -97,7 +97,7 @@ nav .right a:last-child
 nav .right a:last-child:hover,
 nav .right a span:last-child:hover,
 nav .mobile-nav a:last-child:hover,
-nav .mobile-nav a span:last-child:hover,{
+nav .mobile-nav a span:last-child:hover{
     color: var(--text-color);
     background-color: var(--light-background-color);
     border-radius: 10px;
