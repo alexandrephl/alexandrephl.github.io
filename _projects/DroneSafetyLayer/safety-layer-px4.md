@@ -63,7 +63,7 @@ A planner command is considered valid only if:
 
 ### State Machine  
 
-#present state machine diagram or code.  
+> 📌 Insert here: a diagram, or a code excerpt showing transitions + entry/exit actions.
 
 ---
 
