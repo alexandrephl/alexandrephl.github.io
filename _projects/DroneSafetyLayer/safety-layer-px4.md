@@ -18,10 +18,14 @@ main-image: /safety-layer.jpg
 ## High-level pipeline  
 **Raspberry Pi (planner/vision)** → **DroneCAN (Classic CAN 2.0)** → **STM32 safety validation (FreeRTOS)** → **MAVLink UART** → **PX4 Offboard**
 
-  Offboard obstacle-avoidance architecture for a PX4-controlled drone: a Raspberry Pi (vision + planning) proposes velocity setpoints, an STM32 safety gate verifies them in real time (freshness, bounds, confidence/TTL), and PX4 executes only commands that pass—otherwise it falls back to a deterministic failsafe command path. 
+  Offboard obstacle-avoidance architecture for a PX4-controlled drone: a Raspberry Pi (vision + planning) proposes velocity setpoints, an STM32 safety gate verifies them in real time (freshness, bounds, confidence/TTL), and PX4 executes only commands that pass, otherwise it falls back to a deterministic failsafe command path. 
 
-### Header 3 
-Use this to have subsection if needed
+## Why it matters 
+Modern small UAVs increasingly rely on computer vision and autonomy, but those AI workloads are not deterministic (variable runtime, OS/GPU scheduling, resource contention). Meanwhile, flight control requires hard real-time deadlines.
+This project tackles that integration problem by implementing a mixed-criticality architecture: a Raspberry Pi proposes avoidance maneuvers, an STM32 safety supervisor validates them deterministically (freshness, bounds, TTL/confidence, state constraints), and PX4 executes only safe commands—otherwise it falls back to a predictable failsafe path.
+It demonstrates a practical way to enable advanced perception without compromising control-loop safety, including latency/jitter measurement on the communication chain.
+
+
 
 
 ## Embedding images 
