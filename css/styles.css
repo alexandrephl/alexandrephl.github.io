@@ -594,6 +594,7 @@ footer p {
 .post-view .title-header .repo-icon{
   flex: 0 0 auto;
   white-space: nowrap;
+  gap: 30px;
   padding: 0.25rem 0.6rem;          /* plus “button” */
   border-radius: 10px;
 
