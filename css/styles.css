@@ -597,7 +597,7 @@ footer p {
   align-items: baseline;
   gap: 0.35rem;
   padding: 0.15rem 0.35rem;
-  border-radius: 8px;
+  margin-bottom: 10px;
 
   color: var(--link-color);
   text-decoration: underline;
