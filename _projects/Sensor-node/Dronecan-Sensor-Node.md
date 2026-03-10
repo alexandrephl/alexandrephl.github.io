@@ -23,4 +23,23 @@ This project demonstrates an end-to-end embedded implementation of a **real sens
 
 ---
 
-## System Architecture
+## System Architecture  
+
+### Components & Responsibilities  
+
+- **STM32F446 (Node MCU)**:
+  - Runs the real-time scheduling (FreeRTOS/CMSIS-RTOS).
+  - Owns CAN/I2C/UART peripheral access through a BSP abstraction layer.
+  - Acquires raw sensor registers over I2C and computes engineering units using Bosch compensation formulas.
+  - Publishes DroneCAN (UAVCAN v0) messages on Classic CAN (2.0):
+    - `uavcan.node.Heartbeat`
+    - `uavcan.equipment.air_data.StaticPressure` (Pa)
+    - `uavcan.equipment.air_data.StaticTemperature` (K)
+
+- **BMP280 (Pressure/Temperature Sensor)**:
+  - Provides raw temperature + pressure registers over I2C.
+ 
+- **PX4 (Autopilot)**:
+  - Subscribes to the DroneCAN sensor messages on the CAN bus.
+  - Uses the published measurements for integration/validation.
+
