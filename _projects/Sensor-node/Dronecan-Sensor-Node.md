@@ -43,3 +43,16 @@ This project demonstrates an end-to-end embedded implementation of a **real sens
   - Subscribes to the DroneCAN sensor messages on the CAN bus.
   - Uses the published measurements for integration/validation.
 
+## What I Implemented
+- CAN TX/RX integration with libcanard (UAVCAN v0 transfers)
+- Periodic **heartbeat** publishing (RTOS-driven)
+- Periodic **pressure** and **temperature** publication
+- Basic node configuration (node ID, node name, bit-rate)
+- External validation scripts using **python-can** + **gs_usb** (USB–CAN)
+
+## Validation & Results  
+
+The second video has the autoplay on. copy and paste the 11-digit id found in the url link. <br>
+*Example* : https://www.youtube.com/watch?v={**MhVw-MHGv4s**}&ab_channel=engineerguy
+{% include youtube-video.html id="MhVw-MHGv4s" autoplay= "false"%}
+{% include youtube-video.html id="XGC31lmdS6s" autoplay = "true" %}
