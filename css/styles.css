@@ -592,29 +592,36 @@ footer p {
     line-height: 1.2;
 }
 
-/* link style */
 .post-view .title-header .repo-icon{
   display: inline-flex;
   align-items: baseline;
-  gap: 0.35rem;
-  padding: 0.25rem 0.6rem;
-  margin-bottom: 10px;
+  gap: 0.4rem;
+  padding: 0.25rem 0.6rem;          /* plus “button” */
+  border-radius: 10px;
 
   color: var(--link-color);
   text-decoration: underline;
   text-underline-offset: 4px;
-  text-decoration-thickness: 2px;
+  text-decoration-thickness: 2px;  /* plus visible */
+  background: transparent;
+
+  transition: 
+    background-color 150ms ease,
+    transform 150ms ease,
+    box-shadow 150ms ease,
+    color 150ms ease,
+    text-decoration-thickness 150ms ease;
 }
 
-/* IMPORTANT: override your global `span { color: ... }` */
+/* override global span color */
 .post-view .title-header .repo-icon span,
 .post-view .title-header .repo-icon i{
   color: inherit;
 }
 
-/* hover */
 .post-view .title-header .repo-icon:hover{
   color: var(--highlight-color);
+
   /* effet plus “fort” */
   background-color: rgba(0,0,0,0.08);   /* plus foncé */
   box-shadow: 0 6px 16px rgba(0,0,0,0.18);
@@ -626,17 +633,6 @@ footer p {
 .post-view .title-header .repo-icon:active{
   transform: translateY(0px);
   box-shadow: 0 2px 8px rgba(0,0,0,0.18);
-}
-
-/* Optional tiny icon alignment tweak */
-.post-view .title-header .repo-ico{
-  position: relative;
-  top: -1px; /* try -1px or -2px */
-}
-
-/* Make the whole thing clickable reliably */
-.post-view .title-header .repo-icon > *{
-  pointer-events: none;
 }
 
 .post-view .summary img {
