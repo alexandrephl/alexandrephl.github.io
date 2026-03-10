@@ -51,6 +51,8 @@ This project demonstrates an end-to-end embedded implementation of a **real sens
 - Basic node configuration (node ID, node name, bit-rate)
 - External validation scripts using **python-can** + **gs_usb** (USB–CAN)
 
+---
+
 ## Validation & Results  
 
 The second video has the autoplay on. copy and paste the 11-digit id found in the url link. <br>
