@@ -24,7 +24,7 @@ It demonstrates a practical way to enable advanced perception without compromisi
 
 ## System Architecture  
 
-### Components & Responsibilities
+### Components & Responsibilities  
 - **PX4 (Autopilot):**
   - Maintains stabilization and core flight control loops.
   - Accepts **Offboard velocity setpoints** over MAVLink and track setpoints.
@@ -39,7 +39,7 @@ It demonstrates a practical way to enable advanced perception without compromisi
   - Validates every planning command under deterministic constraints: (freshness, bounds, TTL/confidence, state constraints, hardware constraints).
   - Emits safe commands only, otherwise forces a predictable failsafe behavior.
 
-### Interfaces
+### Interfaces  
 - **Pi ↔ STM32:** DroneCAN (UAVCAN v0) via libcanard (Classic CAN 2.0)
 - **STM32 ↔ PX4:** MAVLink over UART (DMA RX for robust reception)
   
