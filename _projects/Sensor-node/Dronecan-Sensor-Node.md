@@ -2,7 +2,7 @@
 layout: post
 title: Dronecan Sensor Node - BMP280
 description:  >-
-  A **DroneCAN (UAVCAN v0)** sensor node running on **STM32F446**.  It publishes a clean air-data subset on the CAN bus (heartbeat + pressure + temperature) using a BSP layer, a dedicated sensor driver, and **libcanard** for transport.
+  A DroneCAN (UAVCAN v0) sensor node running on STM32F446.  It publishes a clean air-data subset on the CAN bus (heartbeat + pressure + temperature) using a BSP layer, a dedicated sensor driver, and libcanard for transport.
 
 skills:
   - C (bare-metal + RTOS)  
