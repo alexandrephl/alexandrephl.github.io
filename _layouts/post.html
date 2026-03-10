@@ -14,8 +14,10 @@ layout: wrapper
             <h1>{{page.title}}</h1>
             {% if page.repo %}
                 <a class="repo-icon" href="{{ page.repo }}" target="_blank" rel="noopener" aria-label="GitHub repository">
-                <span class="repo-label">(GitHub repo)</span>
-                <i class="fa-brands fa-github"></i>
+                    <span class="repo-paren">(</span>
+                    <span class="repo-text">GitHub repo</span>
+                    <i class="fa-brands fa-github repo-ico"></i>
+                    <span class="repo-paren">)</span>
                 </a>
             {% endif %}
         </div>
