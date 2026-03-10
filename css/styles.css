@@ -149,7 +149,7 @@ nav .mobile-nav {
   display: inline-flex;
   align-items: center;
   gap: 0.35rem; /* if you add text later */
-  font-size: 0.95em;
+  font-size: 1.3em;
   text-decoration: none;
 }
 
