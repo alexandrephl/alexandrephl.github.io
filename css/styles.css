@@ -151,11 +151,13 @@ nav .mobile-nav {
   gap: 0.4rem; 
   font-size: 1.3em;
   text-decoration: none;
+  line-height: normal;
 }
 
 .repo-label{
   font-size: 0.85em;
   opacity: 0.85;
+  line-height: normal;
 }
 
 /* SECTION 1: Hero */
