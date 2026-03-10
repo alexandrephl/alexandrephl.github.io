@@ -27,17 +27,23 @@ It demonstrates a practical way to enable advanced perception without compromisi
 ### Components & Responsibilities  
 - **PX4 (Autopilot):**
   - Maintains stabilization and core flight control loops.
-  - Accepts **Offboard velocity setpoints** over MAVLink and track setpoints.
-  - Sends Heartbits & flying state data (vel...) over mavlink.
+  - Accepts **Offboard velocity setpoints** over MAVLink.
+  - Publishes **heartbeat** and selected state feedback (e.g., velocity) over MAVLink.
 - **Raspberry Pi (Autonomy):**
-  - Runs perception algorithm and identify obstacles with distances/speed.
-  - Runs flight planning algorithm: Establish next target point, using best avoidance tragectory if needed.
-  - Produces velocity setpoints *(vx, vy, vz, yaw_rate)* plus metadata *(timestamp, TTL, confidence)*, and sends them over CANBus.
+  - Runs perception algorithm to detect obstacles (distance/relative motion).
+  - Runs planning to compute the next safe maneuver / trajectory.
+  - Produces velocity setpoints *(vx, vy, vz, yaw_rate)* plus metadata *(timestamp, TTL, confidence)*.
+  - Sends planner commands to the STM32 over CAN.
 - **STM32F446 (Safety Gatekeeper):**
-  - Reads planning commands over CAN.
-  - Reads UAV Heartbits & flying state data (vel...) over mavlink.
-  - Validates every planning command under deterministic constraints: (freshness, bounds, TTL/confidence, state constraints, hardware constraints).
-  - Emits safe commands only, otherwise forces a predictable failsafe behavior.
+  - Receives planner commands via DroneCAN.
+  - Receives PX4 status via MAVLink (heartbeat + selected state feedback).
+  - Validates every planner command under deterministic constraints:
+    - freshness watchdog
+    - numerical validity + bounds
+    - TTL/confidence policy
+    - state compatibility (armed/offboard)
+    - system/hardware constraints (project-defined)
+  - Forwards **only safe commands** to PX4; otherwise enforces a deterministic failsafe behavior.
 
 ### Interfaces  
 - **Pi ↔ STM32:** DroneCAN (UAVCAN v0) via libcanard (Classic CAN 2.0)
