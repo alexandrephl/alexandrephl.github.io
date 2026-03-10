@@ -12,6 +12,11 @@ layout: wrapper
         
         <div class="title-header">
             <h1>{{page.title}}</h1>
+            {% if page.repo %}
+                <a class="repo-icon" href="{{ page.repo }}" target="_blank" rel="noopener" aria-label="GitHub repository">
+                <i class="fa-brands fa-github"></i>
+                </a>
+            {% endif %}
         </div>
         
         <div class="project-description">
