@@ -64,7 +64,6 @@ A planner command is considered valid only if:
 
 ### State Machine  
 
-<img class="project-diagram" src="/_projects/DroneSafetyLayer/SafetyLayerDiagram.png" alt="Safety gate state machine">
 <div class="project-diagram-wrap">
   <img class="project-diagram"
        src="/_projects/DroneSafetyLayer/SafetyLayerDiagram.png"
