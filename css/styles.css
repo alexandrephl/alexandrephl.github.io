@@ -374,7 +374,16 @@ nav .mobile-nav {
     text-decoration: underline;
 }
 
-
+.project-diagram{
+  width: 100%;
+  max-width: 900px;
+  display: block;
+  margin: 0 auto;
+  filter: none;
+  mix-blend-mode: normal;
+  opacity: 1;
+  background: white;
+}
 
 /* SECTION 3: SKILLS */
 .skills-section {
