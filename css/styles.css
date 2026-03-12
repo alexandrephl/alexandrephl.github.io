@@ -379,10 +379,9 @@ nav .mobile-nav {
   max-width: 900px;
   display: block;
   margin: 0 auto;
-  filter: none;
-  mix-blend-mode: normal;
-  opacity: 1;
   background: white;
+  padding: 8px;
+  border-radius: 8px;
 }
 
 /* SECTION 3: SKILLS */
