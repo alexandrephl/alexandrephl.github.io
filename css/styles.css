@@ -374,12 +374,20 @@ nav .mobile-nav {
     text-decoration: underline;
 }
 
+.project-diagram-wrap{
+  display: flex;
+  justify-content: center;
+  margin: 1.5rem 0;
+  background: white;
+  padding: 12px;
+  border-radius: 10px;
+}
+
 .project-diagram{
   display: block;
   width: auto;
   max-width: 700px;
-  max-height: 700px;
-  margin: 1.5rem auto;
+  height: auto;
 }
 
 /* SECTION 3: SKILLS */
