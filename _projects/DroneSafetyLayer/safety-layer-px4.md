@@ -64,7 +64,7 @@ A planner command is considered valid only if:
 
 ### State Machine  
 
-{% include image-gallery.html images="SafetyLayerDiagram.png" height="700" %}
+{% include image-gallery.html images="/_projects/DroneSafetyLayer/SafetyLayerDiagram.png" height="700" %}
 
 ---
 
