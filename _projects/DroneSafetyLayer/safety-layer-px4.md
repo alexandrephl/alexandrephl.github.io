@@ -64,7 +64,7 @@ A planner command is considered valid only if:
 
 ### State Machine  
 
-> 📌 Insert here: a diagram, or a code excerpt showing transitions + entry/exit actions.
+{% include image-gallery.html images="SafetyLayerDiagram.png" height="700" %}
 
 ---
 
