@@ -374,12 +374,12 @@ nav .mobile-nav {
     text-decoration: underline;
 }
 
-.post-view .content .project-diagram-center{
+.project-diagram-center{
   text-align: center;
   margin: 1.5rem 0;
 }
 
-.post-view .content .project-diagram-wrap{
+.project-diagram-wrap{
   display: block;
   width: fit-content;
   margin: 1.5rem auto;
@@ -388,7 +388,7 @@ nav .mobile-nav {
   border-radius: 10px;
 }
 
-.post-view .content .project-diagram{
+.project-diagram{
   display: block;
   width: auto
   max-width: 700px;
