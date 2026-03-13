@@ -4,8 +4,7 @@ title: TM4C123 TimeBomb
 repo: "https://github.com/alexandrephl/tm4c-QP-C-timebomb"
 
 description: >-
-  A **reactive embedded demo** built on the **EK-TM4C123GXL LaunchPad** using the **QP/C framework**.  
-The project demonstrates a clean **Active Object architecture**, a **hierarchical state machine**, **time events**, and **live runtime tracing** via **QSPY over UART0**.
+  A **reactive embedded demo** built on the **EK-TM4C123GXL LaunchPad** using the **QP/C framework**.  The project demonstrates a clean **Active Object architecture**, a **hierarchical state machine**, **time events**, and **live runtime tracing** via **QSPY over UART0**.
 
 skills:
   - C (bare-metal + RTOS)
