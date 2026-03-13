@@ -374,6 +374,11 @@ nav .mobile-nav {
     text-decoration: underline;
 }
 
+.post-view .content .project-diagram-center{
+  text-align: center;
+  margin: 1.5rem 0;
+}
+
 .post-view .content .project-diagram-wrap{
   display: block;
   width: fit-content;
