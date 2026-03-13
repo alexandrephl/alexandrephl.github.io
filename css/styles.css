@@ -376,7 +376,7 @@ nav .mobile-nav {
 
 .project-diagram-center{
   text-align: center;
-  margin: 1.5rem 0;
+  margin: 1.5rem auto;
 }
 
 .project-diagram-wrap{
