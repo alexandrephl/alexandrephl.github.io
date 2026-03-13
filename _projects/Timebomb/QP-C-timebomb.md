@@ -38,27 +38,23 @@ This is valuable because the same design principles scale to real embedded produ
 ## System Architecture
 
 ### Components & Responsibilities
-
-**TimeBomb Active Object**
-- Encapsulates the application behavior as a reactive object.
-- Processes asynchronous events through the QP/C event framework.
-- Implements the full behavioral logic as a hierarchical state machine.
-
-**Board / BSP Layer**
-- Handles hardware-specific interactions:
-  - buttons (SW1 / SW2)
-  - LEDs
-  - UART tracing interface
-- Isolates low-level board access from the application state machine.
-
-**QP/C Framework**
-- Provides the event-driven execution model.
-- Manages dispatching, state transitions, and time events.
-- Supports the Active Object pattern used by the demo.
-
-**QSPY / QS Tracing**
-- Captures runtime events and state transitions over UART0.
-- Provides visibility into the system behavior while it executes.
+- **TimeBomb Active Object**
+  - Encapsulates the application behavior as a reactive object.
+  - Processes asynchronous events through the QP/C event framework.
+  - Implements the full behavioral logic as a hierarchical state machine.
+- **Board / BSP Layer**
+  - Handles hardware-specific interactions:
+    - buttons (SW1 / SW2)
+    - LEDs
+    - UART tracing interface
+  - Isolates low-level board access from the application state machine.
+- **QP/C Framework**
+  - Provides the event-driven execution model.
+  - Manages dispatching, state transitions, and time events.
+  - Supports the Active Object pattern used by the demo.
+- **QSPY / QS Tracing**
+  - Captures runtime events and state transitions over UART0.
+  - Provides visibility into the system behavior while it executes.
 
 ---
 
