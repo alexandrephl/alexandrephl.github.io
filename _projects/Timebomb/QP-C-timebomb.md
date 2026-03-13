@@ -26,10 +26,10 @@ main-image: /timebomb_header.png
 This project focuses on a core embedded software challenge: building systems that react cleanly to asynchronous events without relying on polling loops or tangled control logic.
 
 Instead of implementing behavior with ad hoc flags and `while` loops, the application is structured around:
-- a **hierarchical state machine**
-- **event-driven dispatching**
-- **time-based transitions**
-- **runtime observability** through tracing
+  - a **hierarchical state machine**
+  - **event-driven dispatching**
+  - **time-based transitions**
+  - **runtime observability** through tracing
 
 This is valuable because the same design principles scale to real embedded products: user interfaces, controllers, fault handling, and real-time supervisory logic all benefit from deterministic event-driven architectures.
 
