@@ -17,7 +17,7 @@ skills:
   - QSPY tracing
   - Code Composer Studio
 
-main-image: /Timebomb_diagram.png
+main-image: 
 ---
 
 ---
@@ -63,6 +63,12 @@ The demo models a countdown device controlled by two buttons:
 - The system can then be reset manually or by restarting execution
 
 ### State Machine
+
+<div class="project-diagram-center">
+  <div class="project-diagram-wrap">
+    <img class="project-diagram" src="/_projects/Timebomb/Timebomb_diagram.png" alt="Safety gate state machine">
+  </div>
+</div>
 
 ---
 
