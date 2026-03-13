@@ -17,7 +17,7 @@ skills:
   - QSPY tracing
   - Code Composer Studio
 
-main-image: /timebomb_header.png
+main-image: /Timebomb_diagram.png
 ---
 
 ---
