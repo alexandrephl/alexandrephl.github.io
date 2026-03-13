@@ -380,9 +380,7 @@ nav .mobile-nav {
 }
 
 .project-diagram-wrap{
-  display: block;
-  width: fit-content;
-  margin: 1.5rem auto;
+  display: inline-block;
   background: #2b2b2b;
   padding: 6px;
   border-radius: 10px;
@@ -390,7 +388,6 @@ nav .mobile-nav {
 
 .project-diagram{
   display: block;
-  width: auto;
   max-width: 700px;
   height: auto;
 }
