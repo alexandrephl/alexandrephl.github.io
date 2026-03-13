@@ -4,8 +4,8 @@ title: TM4C123 TimeBomb
 repo: "https://github.com/alexandrephl/tm4c-QP-C-timebomb"
 
 description: >-
-  Event-driven embedded demo on the EK-TM4C123GXL board using QP/C. The project showcases a hierarchical state machine,
-  time events, button-driven transitions, and live runtime tracing with QSPY over UART.
+  A **reactive embedded demo** built on the **EK-TM4C123GXL LaunchPad** using the **QP/C framework**.  
+The project demonstrates a clean **Active Object architecture**, a **hierarchical state machine**, **time events**, and **live runtime tracing** via **QSPY over UART0**.
 
 skills:
   - C (bare-metal + RTOS)
@@ -21,9 +21,7 @@ skills:
 main-image: /timebomb_header.png
 ---
 
-## Project Overview
-A **reactive embedded demo** built on the **EK-TM4C123GXL LaunchPad** using the **QP/C framework** from Quantum Leaps.  
-The project demonstrates a clean **Active Object architecture**, a **hierarchical state machine**, **time events**, and **live runtime tracing** via **QSPY over UART0**.
+---
 
 ## Why It Matters
 This project focuses on a core embedded software challenge: building systems that react cleanly to asynchronous events without relying on polling loops or tangled control logic.
