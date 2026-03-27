@@ -17,7 +17,7 @@ skills:
   - QSPY tracing
   - Code Composer Studio
 
-main-image: 
+main-image: /pic_board.jpg
 ---
 
 ---
