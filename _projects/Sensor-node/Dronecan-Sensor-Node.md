@@ -14,7 +14,7 @@ skills:
   - Breadboarding for circuit testing
   - Low-level drivers (CAN, UART, I2C...)
 
-main-image: /safety-layer.jpg
+main-image: /sensor-node.jpg
 ---
 ---
 
