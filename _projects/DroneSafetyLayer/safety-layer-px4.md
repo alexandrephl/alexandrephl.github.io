@@ -74,7 +74,8 @@ A planner command is considered valid only if:
 ---
 
 ## Validation & Results
-
+This video shows the full PX4 Obstacle Avoidance Safety Layer demo in HITL simulation. 
+It shows the simulation environment, the hardware architecture, the CAN and MAVLink communication chain, and the validated Offboard avoidance maneuver around an obstacle.
 
 {% include youtube-video.html id="t1NQLGvgY1E" autoplay = "true" %}
 
