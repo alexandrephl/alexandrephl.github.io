@@ -76,8 +76,6 @@ A planner command is considered valid only if:
 ## Validation & Results
 
 
-The second video has the autoplay on. copy and paste the 11-digit id found in the url link. <br>
-*Example* : https://www.youtube.com/watch?v={**MhVw-MHGv4s**}&ab_channel=engineerguy
 {% include youtube-video.html id="t1NQLGvgY1E" autoplay = "true" %}
 
 
