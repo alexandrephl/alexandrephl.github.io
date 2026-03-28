@@ -56,7 +56,7 @@ This project demonstrates an end-to-end embedded implementation of a **real sens
 ## Validation & Results  
 
 This video presents the full validation demo of the sensor node. It illustrates how the STM32 reads the BMP280 over I2C, converts the measurements into engineering values, and republishes them over CAN as a distributed embedded node. The demo also shows heartbeat monitoring and RTT-based latency estimation on the communication path.
-{% include youtube-video.html id="5_wzl8V2lV0" autoplay = "true" %}
+{% include youtube-video.html id="5_wzl8V2lV0" autoplay = "false" %}
 
 
 
