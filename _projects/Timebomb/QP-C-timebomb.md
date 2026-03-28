@@ -70,15 +70,3 @@ The demo models a countdown device controlled by two buttons:
   </div>
 </div>
 
----
-
-## Validation & Observability
-A key strength of this project is that the behavior is not treated as a black box.
-
-Using **QSPY** over UART0 at **115200 baud**, the system can be observed live:
-- button events
-- state transitions
-- time-event activity
-- LED-related behavior
-
-This makes it possible to validate that the software reacts exactly as intended, which is demonstrated in the following video:
